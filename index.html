@@ -1,65 +1,77 @@
 <!Doctype html>
- <html>
-     <head>
-	            <meta name="viewport"    content="width=device-width,  inital-scale=1.0" >
-	            <title> Music Project </title>  
-			    <link rel="stylesheet" href="style.css">
-				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
-				<link rel="icon" type="image/png" href="https://www.ab-club.ir/test/favican.png" />
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700;1,800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-				</head>
-    <body> 
-	<div   class="container" >
-	  <div  class="navbar"   >
-			                   <img src="logo.png "    class="logo"    />
-					                 <ul> 
-									                <li><a   href="#"   >HOME</a></li>
-									                <li><a   href="#"   >PRODUCTS</a></li>
-									                <li><a   href="#"   >POPULAR</a></li>
-									                <li><a   href="#"   >CONTACT</a></li>
-									                <li><a   href="#"   >ABOUT US</a></li>
-									 </ul> 
-                     </div>
-					 				
-				<div   class="left">
-				                   THE<br> REAL <br> SOUND	
-				</div>	
-				
-				<div   class="right">
-				             <p>Click Here To Listen</p>
-							 <img src="play.png"   id="icon"        onclick="play()"   />
-							 
-							 
-							 
-							  <audio  id="mySong"   >			
-                                        <source   src="shape-of-my-heart.mp3"     type="audio/mp3"  >			   
-				        </audio>
+<html>
 
-							   <!--  <script>
+<head>
+	<meta name="viewport" content="width=device-width,  inital-scale=1.0">
+	<title> Music Project </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" type="image/png" href="https://www.ab-club.ir/test/favican.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700;1,800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="logo.png " class="logo" />
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">PRODUCTS</a></li>
+				<li><a href="#">POPULAR</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">ABOUT US</a></li>
+			</ul>
+		</div>
+
+		<div class="left">
+			THE<br> REAL <br> SOUND
+		</div>
+
+		<div class="right">
+			<p>Click Here To Listen</p>
+			<img src="play.png" id="icon" onclick="play()" />
+
+
+
+			<audio id="mySong">
+				<source src="shape-of-my-heart.mp3" type="audio/mp3">
+			</audio>
+
+			<!--  <script>
                                        function play() {
                                        var mySong = document.getElementById("mySong");
                                                 mySong.play();}        
                                       </script>--->
 
 
-                                   <script> var mySong = document.getElementById ("mySong"); 
-								   var icon = document.getElementById("icon");
-								   icon.onclick = function () { if(mySong.paused)
-								   { mySong.play (); icon.src = "pause.png"; }
-								   else{ mySong.pause (); icon.src = "play.png"; }
-								   } 
-								   </script>
-							 
-							 
-							 
-							 
-							 
-							 
-							 
-				</div>	
+			<script>
+				var mySong = document.getElementById("mySong");
+				var icon = document.getElementById("icon");
+				icon.onclick = function () {
+					if (mySong.paused) {
+						mySong.play();
+						icon.src = "pause.png";
+					} else {
+						mySong.pause();
+						icon.src = "play.png";
+					}
+				}
+			</script>
 
-    </body>
- </html> 
+
+
+
+
+
+
+		</div>
+
+</body>
+
+</html>
